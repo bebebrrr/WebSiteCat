@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Comic Sans MS';
+}
+
+header{
+    width: 1200px;
+    height: 120px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    width: 1200px;
+    height: 100px;
+    font-size: 12px;
+}
+
+.header-line {
+    border: none;
+    height: 1px;
+    background-color: #F6A6BF;
+    margin-left: 100px;
+    margin-top: 0;
+    width: 1000px;
+}
+
+.logo{
+    width: 160px;
+    height: auto; 
+
+}
