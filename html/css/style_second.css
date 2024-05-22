@@ -66,7 +66,7 @@ header{
     padding: 20px;
 }
 
-.header_link {
+.header_link, .footer-link {
     text-decoration: none;
     font-style: normal;
     color: #242424;
@@ -82,34 +82,33 @@ header{
 
 /* MAIN STYLE */
 
-main{
-    margin: 100px;
-}
 
 .zagalovok{
-    display: flex;
-    margin: 50px;
-    margin-left: 30px;
     margin-top: 50px;
-    gap: 300px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .Look{
-    border: 1px #F6A6BF solid;
-    border-radius: 20px;
     padding: 10px;
+    width: 439px;
 }
 
 .rooms{
-    margin-top: 100px;
-    display: flex;
-    gap: 666px;
-    border: 1px #F6A6BF solid;
-    border-radius: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 36px;
+}
+
+.room-desc {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #242424;
 }
 
 .rooms img{
@@ -117,27 +116,27 @@ main{
     height: 80px;
 }
 
-.rooms1, .rooms2, .rooms3{
-    display: flex;
-    gap: 140px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 .room{
+    position: relative;
     border:none;
     border-radius: 100%;
-    background-color: #facddb;
-    background-size: cover;
     width: 100px;
     height: 90px;
     color:#661818;
     font-size: 30px;
+    cursor: pointer;
 }
 
-.room:hover{
-    border:none;
-    background-color: #F6A6BF;
+.room::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 57px;
+    background-image: url('../content/button.png');
+}
+
+.room:hover.room::after {
+    background-image: url('../content/buttonCLICK.png');
     background-size: cover;
 }
 
