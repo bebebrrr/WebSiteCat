@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демонстрационная страница</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Общие стили */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Навигация */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Блочная верстка */
+        .block {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        .block-1 {
+            background-color: #ffcccb;
+        }
+
+        .block-2 {
+            background-color: #add8e6;
+        }
+
+        .block-3 {
+            background-color: #90ee90;
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 45%;
+            margin: 10px;
+            background-color: #ffa07a;
+            padding: 10px;
+        }
+
+        .run-in {
+            display: run-in;
+            font-weight: bold;
+        }
+
+        /* Позиционирование и z-index */
+        .positioning-container {
+            position: relative;
+            height: 300px;
+            background-color: #d3d3d3;
+        }
+
+        .positioned-element {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+
+        .pos-1 {
+            background-color: rgba(255, 0, 0, 0.5);
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+        }
+
+        .pos-2 {
+            background-color: rgba(0, 255, 0, 0.5);
+            top: 50px;
+            left: 50px;
+            z-index: 2;
+        }
+
+        .pos-3 {
+            background-color: rgba(0, 0, 255, 0.5);
+            top: 80px;
+            left: 80px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#block-1">Блок 1</a></li>
+                <li><a href="#block-2">Блок 2</a></li>
+                <li><a href="#block-3">Блок 3</a></li>
+                <li><a href="#positioning">Позиционирование</a></li>
+            </ul>
+        </nav>
+
+        <div class="block block-1" id="block-1">
+            <p>1. Создать собственную страницу, используя блочную верстку. Для каждого блока определить цвет фона. Обязательно на странице примените вложенные плавающие блоки, продемонстрируйте работу свойства – display, использовать свойства inline-block, run-in. Выполнить сокрытие элемента. На странице создайте панель навигации.</p>
+            <div class="inline-block">Вложенный блок 1</div>
+            <div class="inline-block">Вложенный блок 2</div>
+        </div>
+
+        <div class="block block-2" id="block-2">
+            <p class="run-in">Элемент с display: run-in</p>
+            <p>Текст после run-in элемента.</p>
+        </div>
+
+        <div class="block block-3 hidden" id="block-3">
+            <p>Этот блок скрыт с использованием display: none.</p>
+        </div>
+
+        <div class="block" id="positioning">
+            <p>2. Создать страницу, продемонстрировать умение работать с позиционированием элементов, обязательно использовать свойство z-index.</p>
+            <div class="positioning-container">
+                <div class="positioned-element pos-1"></div>
+                <div class="positioned-element pos-2"></div>
+                <div class="positioned-element pos-3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
