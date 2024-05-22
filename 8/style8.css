@@ -1,0 +1,39 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    color: #0056b3;
+}
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #333;
+}
+button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #003f7f;
+}
+.highlight {
+    margin: 10px 0;
+}
+.clickable {
+    cursor: pointer;
+}
