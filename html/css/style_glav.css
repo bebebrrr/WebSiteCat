@@ -1,3 +1,4 @@
+/* Base settings */
 *{
     margin: 0;
     padding: 0;
@@ -7,11 +8,19 @@
 body{
     background-color: rgb(255, 255, 255);
     font-family: 'Comic Sans MS';
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
 }
 
 header{
     width: 1200px;
-    height: 120px;
+    margin: 0 auto;
+}
+
+/* header's styles*/
+.as {
+    margin: 0 auto;
 }
 
 .menu{
@@ -46,42 +55,136 @@ header{
 .links{
     font-size: 12px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding-top: 20px;
-    padding-left: 350px;
-    margin-right: 300px;
+    gap: 40px;
 }
 
+/* First checking style*/
 .content-all{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px;
-}
-
-.cats-img{
+    justify-content: center;
+    align-items: left;
+    padding: 50px;
+    padding-left: 200px;
+    max-width: fit-content;
+    flex-direction: column;
     
 }
 
 .input-bottom-border{
     border: none; /* Убираем стандартную рамку */
-    border-bottom: 2px solid #333; /* Добавляем нижнюю рамку */
-    height: 30px;
+    border-bottom: 1px solid #242424; /* Добавляем нижнюю рамку */
+    height: 36px;
+    margin-bottom: 30px;
+    color: #848484;
 }
 
 .input-bottom-border:focus {
     outline: none; /* Убираем стандартный outline */
-    border-bottom-color: #555; /* Меняем цвет нижней рамки при фокусе */
+    border-bottom-color: #242424; /* Меняем цвет нижней рамки при фокусе */
 }
 
-footer{
+.info-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px;
-    padding-bottom: 3%;
-    width: 1200px;
-    height: 100px;
+    justify-content: center;
+}
+
+.info{
+    display: flex;
+    padding-top: 100px;
+    gap: 75px;
     font-size: 16px;
+}
+
+.cats-img img {
+    position: absolute;
+    right: 0px;
+    top: 284px;
+    overflow: hide;
+    z-index: -2;
+}
+
+.main-p {
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.button-main {
+    border: none;
+    cursor: pointer;
+    width: 260px;
+    height: 60px;
+    color: #fff;
+    background-color: #F6A6BF;
+    border-radius: 100px;
+}
+
+.hearrds {
+    display: flex;
+    gap: 20px;
+}
+/* Nomers and cens style */
+
+.nomers-cens{
+    margin-top: 200px;
+    margin-left: 100px;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: left;
+    height: 500px;
+    width: auto;
+}
+
+.nomer-standart{
+    display: block;
+    border: 1px #F6A6BF solid;
+}
+
+.nomer-standart-plus{
+    display: block;
+    border: 1px #F6A6BF solid;
+    display: inline-block;
+    justify-content: center;
+
+}
+
+.nomer-lux{
+    display: block;
+    border: 1px #F6A6BF solid;
+}
+
+.text-nomers{
+    width: 380px;
+    font-size: 10px;
+}
+#Hnomers{
+    font-size: 14px;
+}
+
+table{
+    width: 380px;
+}
+
+tr{
+    padding-top: 10px;
+}
+
+td { 
+    padding: 10px; 
+    padding-right: 20px; 
+}
+
+#b2 {
+    height: 30px;
+    width: 200px;
+}
+
+#b3{
+    height: 30px;
+    width: 200px;
+    background-color: #fff;
+    border: 1px #F6A6BF solid;
+    color: #F6A6BF;
+
 }
