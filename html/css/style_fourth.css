@@ -1,0 +1,170 @@
+/* Base settings */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Comic Sans MS';
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+header{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header's styles*/
+.as {
+    margin: 0 auto;
+}
+
+.menu{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    height: 100px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 100%;
+    color: #242424;
+}
+
+.contacts {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-line {
+    border: none;
+    height: 1px;
+    background-color: #F6A6BF;
+    width: 100%;
+}
+
+.logo{
+    width: 160px;
+    height: auto; 
+
+}
+
+.links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 120px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.header_link, .footer-link {
+    text-decoration: none;
+    font-style: normal;
+    color: #242424;
+
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 100%;
+}
+
+.ppink{
+    color:#F6A6BF;
+}
+
+/* MAIN STYLE */
+
+.vajno{
+    display: flex;
+    margin-top: 50px;
+    gap: 170px;
+    background-color: #FFFEF1;
+}
+
+.text-vajno{
+    margin-top: 150px;
+}
+
+.text-vajno p{
+    margin-top: 20px;
+}
+
+/* O NAS */
+
+.o-nas{
+    margin-bottom: 50px;
+}
+
+.o-nas1{
+    display: flex;
+    gap: 520px;
+    margin-top: 60px;
+}
+
+.text-o-nas1{
+    width: 420px;
+}
+
+.o-nas2{
+    display: flex;
+    gap: 150px;
+    margin-top: 60px;
+}
+
+.text-o-nas2{
+    width: 600px;
+}
+
+/* PREDLAGAEM */
+
+.predlagaem{
+    display: flex;
+    margin: 50px;
+    gap: 220px;
+}
+
+.ulcat1, .ulcat2{
+    padding-top: 30px;
+}
+
+ul{
+    list-style-image: url('../content/sitcat.png')
+}
+
+ul.DopOptions{
+    font-size: 12px;
+    color:#7a7a7a;
+    padding-top: 10px;
+    list-style-image: none;
+    list-style-type: none;
+}
+
+/* FOOTER STYLE*/
+
+.linksFOOT{
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    color: #242424;
+
+
+    margin:100px;
+    margin-bottom: 50px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.container-footer {
+    display: flex;
+    gap: 40px;
+}
