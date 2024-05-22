@@ -137,8 +137,7 @@ main{
 
 .room:hover{
     border:none;
-    background-color: none;
-    background-image: url('content/buttonCLICK.png');
+    background-color: #F6A6BF;
     background-size: cover;
 }
 
