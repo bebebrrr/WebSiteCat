@@ -82,40 +82,61 @@ header{
 
 /* MAIN STYLE */
 
+h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 140%;
+    color: #242424;
+
+
+}
+
 .zayavka{
     margin-top: 30px;
 }
 
 .zayavka h2{
-    margin-left: 100px;
-}
-
-.oformlenie img{
-    width: 200px;
-    height: 176px;
-    margin-top: 30px;
-    margin-left: 100px;
-    background-color: antiquewhite;
-    border-radius: 20%;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 15px;
 }
 
 .oformlenie{
     display: flex;
-    gap: 400px;
-    margin-top: 40px;
+    justify-content: space-between;
 }
 
-form{
+form {
+    background-color: #FFFEF1;
+    padding: 50px;
+}
+
+.text-inputs{
     display: flex;
     gap: 30px;
+    
 }
 
 .input-bottom-border{
     border: none; /* Убираем стандартную рамку */
     border-bottom: 1px solid #242424; /* Добавляем нижнюю рамку */
     height: 36px;
+    width: 190px;
     margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 2px;
     color: #848484;
+    background-color: #FFFEF1;
+}
+
+#prim {
+    width: 410px;
+    margin-bottom: 70px;
+    margin-top: 70px;
 }
 
 .input-bottom-border:focus {
@@ -126,14 +147,24 @@ form{
 .button-main {
     border: none;
     cursor: pointer;
-    width: 180px;
+    width: 330px;
     height: 60px;
     color: #fff;
     background-color: #F6A6BF;
     border-radius: 100px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+
+
+
 }
 
 /* RAZMESHENIE */
+
+
 
 hr {
     border: none;
@@ -143,11 +174,19 @@ hr {
 }
 
 ul{
-    list-style-image: url('../content/tochka.png')
+    list-style-image: url('../content/tochka.png');
+    width: 360px;
+    margin-right: 250px;
 }
 
 li{
     padding-top: 20px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #242424;
 }
 
 #HHusl{
@@ -157,34 +196,41 @@ li{
 
 .rec p{
     padding-top: 20px;
-    font-size: 14px;
-    color:#0f0f0f;
+   
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    width: 450px;
+    color: #848484;
+
+
 }
 
 .razm, .razm1, .razm2{
     display: flex;
     padding-top: 40px;
     padding-bottom: 40px;
-    gap: 266px;
-
-}
-
-.razm{
-    gap:470px;
-}
-
-.razm2{
-    gap: 700px;
+    justify-content: space-between;
 }
 
 .vajno{
-    margin-top: 30px
+    margin-top: 30px;
 }
 
 .vajno ul{
     margin-top: 20px;
     margin-left: 20px;
 }
+
+.vajno ul li {
+    width: 441px;
+}
+
+.ul3 {
+    width: 610px;
+}
+
 /* FOOTER STYLE */
 
 .linksFOOT{

@@ -43,7 +43,7 @@
                     </form>  
                 </div>
                 <div class="butt-z">
-                    <button id="b1" class="button-main">ОСТАВИТЬ ЗАЯВКУ</button>
+                    <button id="b1" class="button-main button1" onclick="changeColor()">ОСТАВИТЬ ЗАЯВКУ</button>
                 </div>
             </div>
             <div class="cats-img">
@@ -109,7 +109,7 @@
                             </tr>
                         </table>
                         <div class="butt-z">
-                            <button id="b2" class="button-main">Забронировать</button>
+                            <button id="b2" class="button-main button2"><a href="fifth.html">Забронировать</a></button>
                         </div>
                     </div>
                 </div>
@@ -143,7 +143,7 @@
                             </tr>
                         </table>
                         <div class="butt-z">
-                            <button id="b3" class="button-main">Забронировать</button>
+                            <button id="b3" class="button-main button2"><a href="fifth.html">Забронировать</a></button>
                         </div>
                     </div>
                     
@@ -180,45 +180,81 @@
                         </tr>
                     </table>
                 <div class="butt-z">
-                    <button id="b2" class="button-main">Забронировать</button>
+                    <button id="b4" class="button-main button2"><a href="fifth.html">Забронировать</a></button>
                 </div>
             </div>
                 
                 </div>
                 </div>
-            </div>  
+        </div>  
         </div>
         <div class="photogallary">
             <h2 id="HHnomers-cens" class="gallery-title">Фотогалерея</h2>
            <div class="container-img-gallery">
-               <img src="content/gallary3.png" alt="">
+               <img id="img1" src="content/gallary3.png"  alt="">
                <div class="container-button">
-                <img src="content/gallary2.png" alt="" style="margin-left: 10px; margin-right: 30px;">   
-                <button class="button-main" id="b4"><</button>
-               <button class="button-main" id="b5">></button>
+                <img id="img2" src="content/gallary2.png" alt="" style="margin-left: 10px; margin-right: 30px;">   
+                <button class="button-main" id="b5" onclick="photogalleryPrev()">&lt;</button>
+               <button class="button-main" id="b6" onclick="photogalleryNext()">&gt;</button>
                </div>
                <div class="container-photo3-gal">
-                 <img src="content/gallary1.png" alt="">  
+                 <img id="img3" src="content/gallary1.png" alt="">  
                </div>
            </div> 
            </div>
     </main>
     <footer>
         <div class="foot-info">
-        <div class="linksFOOT">
+            <div class="linksFOOT">
 
-            <p class="ppink">Copyright © 2024</p>  
-            <div class="container-footer">
-                <p><a href="#" class="footer-link">Главная</a></p>
-                <p><a href="#" class="footer-link">Заявка на бронирование</a></p>
-                <p><a href="#" class="footer-link">Оплатить</a></p>
-                <p><a href="second.html" class="footer-link">Видеонаблюдение</a></p>
-                <p><a href="#" class="footer-link">Всё о нас</a></p>
-            </div>
-            
+                <p class="ppink">Copyright © 2024</p>  
+                <div class="container-footer">
+                    <p><a href="first.html" class="footer-link">Главная</a></p>
+                    <p><a href="fifth.html" class="footer-link">Заявка на бронирование</a></p>
+                    <p><a href="third.html" class="footer-link">Оплатить</a></p>
+                    <p><a href="second.html" class="footer-link">Видеонаблюдение</a></p>
+                    <p><a href="fourth.html" class="footer-link">Всё о нас</a></p>
+                </div>
+                
             </div>   
         </div>
         
     </footer>
+    <script>
+        let currentImageIndex = 0;
+        const images = [
+        "content/gallery3.png",
+        "content/gallery2.png",
+        "content/gallery1.png",
+        "content/gallery4.jpg",
+        "content/gallery5.jpg",
+        "content/gallery6.jpg"
+        ];
+
+        document.addEventListener("DOMContentLoaded", () => {
+    // Initial update when the DOM content is loaded
+    document.getElementById("img1").src = images[0];
+    document.getElementById("img2").src = images[1];
+    document.getElementById("img3").src = images[2];
+});
+
+function photogalleryPrev() {
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    updateGallery();
+}
+
+function photogalleryNext() {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    updateGallery();
+}
+
+function updateGallery() {
+    document.getElementById("img1").src = images[currentImageIndex];
+    document.getElementById("img2").src = images[(currentImageIndex + 1) % images.length];
+    document.getElementById("img3").src = images[(currentImageIndex + 2) % images.length];
+}
+
+    </script>
+    <script src="js/script_first.js"></script>
 </body>
 </html>

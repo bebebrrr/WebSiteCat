@@ -85,12 +85,14 @@ header{
 .vajno{
     display: flex;
     margin-top: 50px;
-    gap: 170px;
+    justify-content: space-between;
     background-color: #FFFEF1;
+    align-items: center;
 }
 
 .text-vajno{
-    margin-top: 150px;
+    max-width: 472px;
+    margin-right: 78px;
 }
 
 .text-vajno p{
@@ -99,52 +101,112 @@ header{
 
 /* O NAS */
 
+h4 {
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #242424;
+    width: 400px;
+}
+
+.h2-t1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: #242424;
+}
+
 .o-nas{
     margin-bottom: 50px;
 }
 
 .o-nas1{
     display: flex;
-    gap: 520px;
+    justify-content: space-between;
     margin-top: 60px;
 }
 
 .text-o-nas1{
-    width: 420px;
+    width: 478px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #242424;
+
 }
 
 .o-nas2{
     display: flex;
-    gap: 150px;
+    justify-content: space-between;
     margin-top: 60px;
 }
 
 .text-o-nas2{
-    width: 600px;
+    width: 478px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #242424;
+
+
 }
 
 /* PREDLAGAEM */
 
 .predlagaem{
     display: flex;
-    margin: 50px;
-    gap: 220px;
+    gap: 86px;
+    margin-bottom: 150px;
 }
 
 .ulcat1, .ulcat2{
     padding-top: 30px;
 }
 
-ul{
-    list-style-image: url('../content/sitcat.png')
+ul li::before{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-image: url('../content/sitcat.png');
+    left: -50px;
 }
 
-ul.DopOptions{
-    font-size: 12px;
-    color:#7a7a7a;
-    padding-top: 10px;
-    list-style-image: none;
-    list-style-type: none;
+ul li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 53px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #242424;
+    list-style: none;
+    left: 50px;
+
+}
+
+div.DopOptions{
+    position: absolute;
+    bottom: -90px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #848484;
+
+
 }
 
 /* FOOTER STYLE*/

@@ -95,6 +95,7 @@ header{
     border: none; /* Убираем стандартную рамку */
     border-bottom: 1px solid #242424; /* Добавляем нижнюю рамку */
     height: 36px;
+    width: 230px;
     margin-bottom: 30px;
     color: #848484;
 }
@@ -106,13 +107,13 @@ header{
 
 .info-container {
     display: flex;
-    justify-content: center;
+    justify-content: end;
 }
 
 .info{
     display: flex;
     padding-top: 100px;
-    gap: 75px;
+    gap: 60px;
     font-size: 16px;
 }
 
@@ -129,14 +130,37 @@ header{
     margin-top: 30px;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .button-main {
-    border: none;
+    border: 1px #F6A6BF solid;
     cursor: pointer;
-    width: 260px;
-    height: 60px;
     color: #fff;
     background-color: #F6A6BF;
     border-radius: 100px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+
+}
+
+.button1 {
+    padding: 10px 30px;
+}
+
+.button2 {
+    padding: 21px 82px;
+}
+
+.button-main:hover {
+    background-color: #fff;
+    color: #F6A6BF;
 }
 
 .hearrds {
@@ -165,6 +189,7 @@ header{
 .text-nomers, .nomer-standart-plus, .nomer-lux{
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-height: 230px;
     width: 380px;
     background-color: #fff4f4;
@@ -195,18 +220,6 @@ td {
     padding-right: 20px; 
 }
 
-#b2 {
-    height: 30px;
-    width: 200px;
-}
-
-#b3{
-    height: 30px;
-    width: 200px;
-    background-color: #fff;
-    border: 1px #F6A6BF solid;
-    color: #F6A6BF;
-}
 
 .razm {
     font-style: normal;
@@ -225,9 +238,16 @@ td {
 }
 
 .butt-z {
+    display: flex;
+    justify-content: center;
     padding: 10px;
+    width: fit-content;
 }
 
+.active-img {
+    width: 200px;
+    height: auto;
+}
 
 /* PHOGALARY STYLES*/
 
@@ -240,14 +260,6 @@ td {
     display:flex;
 }
 
-#b4{
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    font-size: 20px;
-    margin-top: 150px;
-    margin-left: 10px;
-}
 
 #b5{
     width: 70px;
@@ -255,8 +267,14 @@ td {
     border-radius: 100%;
     border: 1px #F6A6BF solid;
     font-size: 20px;
-    background-color: #fff;
-    color: #F6A6BF;
+}
+
+#b6{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 1px #F6A6BF solid;
+    font-size: 20px;
 }
 
 .container-button{
