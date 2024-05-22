@@ -140,6 +140,11 @@ header{
     background-size: cover;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 /* FOOTER STYLE */
 
 .linksFOOT{

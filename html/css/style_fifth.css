@@ -82,6 +82,8 @@ header{
 
 /* MAIN STYLE */
 
+
+
 h3 {
     font-style: normal;
     font-weight: 600;
@@ -157,9 +159,12 @@ form {
     font-weight: 500;
     font-size: 20px;
     line-height: 140%;
+}
 
-
-
+.button-main:hover {
+    background-color: #fff;
+    color: #F6A6BF;
+    border: 1px #F6A6BF solid;
 }
 
 /* RAZMESHENIE */
