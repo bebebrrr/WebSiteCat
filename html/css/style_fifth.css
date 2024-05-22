@@ -82,54 +82,109 @@ header{
 
 /* MAIN STYLE */
 
-.all{
-    margin-top: 50px;
-    padding: 20px;
-    background-color: #faf8f8;
+.zayavka{
+    margin-top: 30px;
+}
+
+.zayavka h2{
+    margin-left: 100px;
+}
+
+.oformlenie img{
+    width: 200px;
+    height: 176px;
+    margin-top: 30px;
+    margin-left: 100px;
+    background-color: antiquewhite;
+    border-radius: 20%;
+}
+
+.oformlenie{
+    display: flex;
+    gap: 400px;
+    margin-top: 40px;
+}
+
+form{
+    display: flex;
+    gap: 30px;
+}
+
+.input-bottom-border{
+    border: none; /* Убираем стандартную рамку */
+    border-bottom: 1px solid #242424; /* Добавляем нижнюю рамку */
+    height: 36px;
+    margin-bottom: 30px;
+    color: #848484;
+}
+
+.input-bottom-border:focus {
+    outline: none; /* Убираем стандартный outline */
+    border-bottom-color: #242424; /* Меняем цвет нижней рамки при фокусе */
+}
+
+.button-main {
+    border: none;
+    cursor: pointer;
+    width: 180px;
+    height: 60px;
+    color: #fff;
+    background-color: #F6A6BF;
+    border-radius: 100px;
+}
+
+/* RAZMESHENIE */
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #F6A6BF;
     width: 100%;
 }
 
-.title-how {
-    margin-top: 70px;
+ul{
+    list-style-image: url('../content/tochka.png')
 }
 
-.adress{
-    margin-top: 30px;
+li{
+    padding-top: 20px;
 }
 
-iframe{
-    margin-top: 30px;
-    width: 1100px;
-    height: 300px;
+#HHusl{
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
 
-.img-adress img{
-    width: 200px;
-    height: 210px;  
+.rec p{
+    padding-top: 20px;
+    font-size: 14px;
+    color:#0f0f0f;
 }
 
-.adress1, .adress2, .adress3{
+.razm, .razm1, .razm2{
     display: flex;
-    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 266px;
+
 }
 
-.text1, .text2 ,.text3 {
-    width: 226px;
+.razm{
+    gap:470px;
+}
+
+.razm2{
+    gap: 700px;
+}
+
+.vajno{
+    margin-top: 30px
+}
+
+.vajno ul{
     margin-top: 20px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    color: #242424;
-
+    margin-left: 20px;
 }
-
-.img-adress {
-    display: flex;
-    justify-content: end;
-    gap: 70px;
-}
-
 /* FOOTER STYLE */
 
 .linksFOOT{
