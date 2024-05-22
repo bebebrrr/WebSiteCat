@@ -126,6 +126,10 @@ header{
 }
 /* Nomers and cens style */
 
+#HHnomers-cens{
+    margin-bottom: 30px;
+}
+
 .nomers-cens{
     margin-top: 200px;
     margin-left: 100px;
@@ -137,26 +141,26 @@ header{
 }
 
 .nomer-standart{
-    display: block;
-    border: 1px #F6A6BF solid;
+    display: flex;
+
+    gap: 30px;
 }
 
 .nomer-standart-plus{
     display: block;
-    border: 1px #F6A6BF solid;
-    display: inline-block;
-    justify-content: center;
+
 
 }
 
 .nomer-lux{
     display: block;
-    border: 1px #F6A6BF solid;
+
 }
 
 .text-nomers{
     width: 380px;
     font-size: 10px;
+    border: 1px #F6A6BF solid;
 }
 #Hnomers{
     font-size: 14px;
@@ -187,4 +191,50 @@ td {
     border: 1px #F6A6BF solid;
     color: #F6A6BF;
 
+}
+
+/* PHOGALARY STYLES*/
+
+.photogallary{
+    margin-top: 400px;
+    margin-left: 100px;
+}
+
+.container-img-gallery{
+    display:flex;
+}
+
+#b4{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    font-size: 20px;
+    margin-top: 150px;
+    margin-left: 10px;
+}
+
+#b5{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 1px #F6A6BF solid;
+    font-size: 20px;
+    background-color: #fff;
+    color: #F6A6BF;
+}
+
+.container-button{
+    margin-left: 20px;
+}
+
+/* FOOTER STYLE */
+
+.linksFOOT{
+    margin:100px;
+    margin-bottom: 50px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
 }
