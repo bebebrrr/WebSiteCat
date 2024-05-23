@@ -99,6 +99,9 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 36px;
+    background-color: #e2e1e1;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .room-desc {

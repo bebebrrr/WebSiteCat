@@ -85,7 +85,8 @@ header{
 .all{
     margin-top: 50px;
     padding: 20px;
-    background-color: #faf8f8;
+    background-color: #e2e1e1;
+    border-radius: 20px;
     width: 100%;
 }
 
